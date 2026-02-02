@@ -1,0 +1,68 @@
+﻿# Environnement virtuel Python
+venv/
+env/
+ENV/
+.venv
+
+# Fichiers Python
+*.pyc
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# Variables d'environnement - IMPORTANT !
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Uploads
+uploads/
+*.jpg
+*.jpeg
+*.png
+*.gif
+
+# Base de données locale
+*.db
+*.sqlite
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Fichiers de test personnels
+test_*.py
