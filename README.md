@@ -33,7 +33,7 @@ API REST complète pour la gestion d'événements, de groupes et de réseaux soc
 
 ---
 
-## 🛠 Technologies
+## Technologies
 
 - **Backend** : Python 3.11, Flask 3.0.0
 - **Base de données** : MongoDB (Atlas/Local)
