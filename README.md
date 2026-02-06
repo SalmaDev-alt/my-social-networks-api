@@ -18,18 +18,18 @@ API REST complète pour la gestion d'événements, de groupes et de réseaux soc
 ### Fonctionnalités
 
 #### Principales
-- 🔐 **Authentification** - JWT Token-based
-- 👥 **Utilisateurs** - CRUD complet avec profils
-- 📅 **Événements** - Publics/Privés avec organisateurs et participants
-- 👨‍👩‍👧‍👦 **Groupes** - Public/Privé/Secret avec système de permissions
-- 💬 **Discussions** - Fils de messages pour événements et groupes
-- 📸 **Albums photos** - Avec système de commentaires
-- 📊 **Sondages** - Questions multiples pour événements
-- 🎫 **Billetterie** - Vente de billets pour événements publics
+-  **Authentification** - JWT Token-based
+-  **Utilisateurs** - CRUD complet avec profils
+-  **Événements** - Publics/Privés avec organisateurs et participants
+-  **Groupes** - Public/Privé/Secret avec système de permissions
+-  **Discussions** - Fils de messages pour événements et groupes
+-  **Albums photos** - Avec système de commentaires
+-  **Sondages** - Questions multiples pour événements
+-  **Billetterie** - Vente de billets pour événements publics
 
-#### BONUS ⭐
-- 🛒 **Shopping List** - Items à apporter aux événements (uniques par événement)
-- 🚗 **Covoiturage** - Offres de covoiturage avec réservation de places
+#### BONUS 
+-  **Shopping List** - Items à apporter aux événements (uniques par événement)
+-  **Covoiturage** - Offres de covoiturage avec réservation de places
 
 ---
 
@@ -43,7 +43,7 @@ API REST complète pour la gestion d'événements, de groupes et de réseaux soc
 
 ---
 
-## 📦 Installation
+##  Installation
 
 ### Prérequis
 - Python 3.8+
@@ -76,15 +76,10 @@ L'API sera accessible sur `http://localhost:5000`
 
 ---
 
-## 📚 Documentation
 
-- **[INSTALLATION.md](INSTALLATION.md)** - Guide d'installation détaillé
-- **[docs/api_documentation.md](docs/api_documentation.md)** - Documentation complète de l'API
-- **[EXEMPLES_REQUETES.md](EXEMPLES_REQUETES.md)** - Exemples de requêtes cURL
+##  Endpoints principaux
 
----
-
-## 🚀 Endpoints principaux
+Lien Documentation Postman : https://documenter.getpostman.com/view/44390291/2sBXc8p3yR#cc25a382-ef3c-4001-b668-5db2a4321e7f
 
 ### Authentification
 ```
@@ -124,35 +119,35 @@ Voir la documentation complète dans `docs/api_documentation.md`
 
 ---
 
-## 🧪 Tests et Validation
+##  Tests et Validation
 
 ### Collection Postman
 
 Tous les endpoints ont été testés avec Postman. La collection complète est disponible en ligne :
 
-**🔗 [Voir la collection Postman](https://web.postman.co/workspace/My-Workspace~652b25ac-3c25-4b97-8738-a34692fe8f1f/collection/44390291-58b0d663-092c-43d0-a6ca-523114be6f24?action=share\&source=copy-link\&creator=44390291)**
+** [Voir la collection Postman](https://web.postman.co/workspace/My-Workspace~652b25ac-3c25-4b97-8738-a34692fe8f1f/collection/44390291-58b0d663-092c-43d0-a6ca-523114be6f24?action=share\&source=copy-link\&creator=44390291)**
 
-**📁 Documentation des tests :** [postman/README.md](postman/README.md)
+** Documentation des tests :** [postman/README.md](postman/README.md)
 
 ### Résultats des tests
 
 | Catégorie | Endpoints | Statut |
 |-----------|-----------|--------|
-| Authentification | 3 | ✅ |
-| Utilisateurs | 2 | ✅ |
-| Événements | 7 | ✅ |
-| Groupes | 6 | ✅ |
-| Discussions | 2 | ✅ |
-| Sondages | 1 | ✅ |
-| Shopping (BONUS) | 1 | ✅ |
-| Covoiturage (BONUS) | 1 | ✅ |
-| Statistiques | 1 | ✅ |
+| Authentification | 3  |
+| Utilisateurs | 2  |
+| Événements | 7 | 
+| Groupes | 6 | 
+| Discussions | 2 | 
+| Sondages | 1 | 
+| Shopping (BONUS) | 1 | 
+| Covoiturage (BONUS) | 1 | 
+| Statistiques | 1 | 
 
-**Total : 24+ endpoints testés avec succès ✅**
+**Total : 24+ endpoints testés avec succès **
 
 ---
 
-## 📂 Structure du projet
+##  Structure du projet
 ```
 my_social_networks_api/
 ├── app.py                      # Point d'entrée
@@ -175,7 +170,7 @@ my_social_networks_api/
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 L'API a été entièrement testée avec **Postman**. Tous les endpoints fonctionnent correctement.
 
@@ -192,23 +187,23 @@ curl -X POST http://localhost:5000/api/auth/register \
 
 ---
 
-## 🔐 Sécurité
+##  Sécurité
 
-- ✅ Authentification JWT obligatoire
-- ✅ Hashage des mots de passe avec bcrypt
-- ✅ Validation stricte avec Marshmallow
-- ✅ CORS configuré
-- ✅ Headers de sécurité
+-  Authentification JWT obligatoire
+-  Hashage des mots de passe avec bcrypt
+-  Validation stricte avec Marshmallow
+-  CORS configuré
+-  Headers de sécurité
 
 ---
 
-## 👨‍💻 Auteur
+##  Auteur
 
 **Salma DISSI**  
 Étudiante en Mastère Data Engineering & AI (EFREI Paris)
 
 ---
 
-## 📝 Licence
+##  Licence
 
 Projet académique - Février 2026

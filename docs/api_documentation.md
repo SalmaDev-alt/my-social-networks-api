@@ -1,4 +1,4 @@
-# 📚 Documentation API - My Social Networks
+# Documentation API - My Social Networks
 
 ## Table des matières
 
@@ -26,27 +26,29 @@
 
 **My Social Networks API** est une API REST complète pour la gestion d'événements, de groupes et de réseaux sociaux.
 
+
 ### Informations générales
 
 - **Base URL**: `http://localhost:5000`
 - **Version**: 1.0.0
 - **Format**: JSON
 - **Authentification**: JWT (JSON Web Token)
-- **Auteur**: Salma
+- **Auteur**: Salma DISSI
 - **Date**: Février 2026
+- **GitHub**:  https://github.com/SalmaDev-alt/my-social-networks-api
 
 ### Fonctionnalités principales
 
-✅ **Authentification** - Inscription et connexion sécurisées avec JWT  
-✅ **Utilisateurs** - Gestion complète des profils utilisateurs  
-✅ **Événements** - Événements publics/privés avec organisateurs et participants  
-✅ **Groupes** - Groupes publics, privés ou secrets  
-✅ **Discussions** - Fils de messages pour événements et groupes  
-✅ **Albums** - Albums photos avec système de commentaires  
-✅ **Sondages** - Sondages avec questions multiples  
-✅ **Billetterie** - Vente de billets pour événements publics  
-✅ **Shopping List** - Liste d'items à apporter (BONUS)  
-✅ **Covoiturage** - Offres de covoiturage (BONUS)
+**Authentification** - Inscription et connexion sécurisées avec JWT  
+**Utilisateurs** - Gestion complète des profils utilisateurs  
+**Événements** - Événements publics/privés avec organisateurs et participants  
+**Groupes** - Groupes publics, privés ou secrets  
+**Discussions** - Fils de messages pour événements et groupes  
+**Albums** - Albums photos avec système de commentaires  
+**Sondages** - Sondages avec questions multiples  
+**Billetterie** - Vente de billets pour événements publics  
+**Shopping List** - Liste d'items à apporter (BONUS)  
+**Covoiturage** - Offres de covoiturage (BONUS)
 
 ---
 
@@ -139,7 +141,7 @@ curl -X GET http://localhost:5000/api/users \
 
 Inscription d'un nouvel utilisateur.
 
-**Authentification requise**: ❌ Non
+**Authentification requise**:  Non
 
 **Corps de la requête**:
 ```json
@@ -187,7 +189,7 @@ Inscription d'un nouvel utilisateur.
 
 Connexion d'un utilisateur existant.
 
-**Authentification requise**: ❌ Non
+**Authentification requise**:  Non
 
 **Corps de la requête**:
 ```json
@@ -220,7 +222,7 @@ Connexion d'un utilisateur existant.
 
 Récupérer les informations de l'utilisateur connecté.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**:  Oui
 
 **Réponse (200)**:
 ```json
@@ -247,7 +249,7 @@ Récupérer les informations de l'utilisateur connecté.
 
 Récupérer la liste des utilisateurs avec pagination et recherche.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**:  Oui
 
 **Paramètres de requête**:
 
@@ -292,7 +294,7 @@ GET /api/users?page=1&per_page=10&search=john
 
 Récupérer les détails d'un utilisateur spécifique.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -317,7 +319,7 @@ Récupérer les détails d'un utilisateur spécifique.
 
 Mettre à jour son profil utilisateur.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Vous ne pouvez modifier que votre propre profil
 
 **Corps de la requête**:
@@ -358,7 +360,7 @@ Mettre à jour son profil utilisateur.
 
 Supprimer son compte utilisateur.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Vous ne pouvez supprimer que votre propre compte
 
 **Réponse (200)**:
@@ -378,7 +380,7 @@ Supprimer son compte utilisateur.
 
 Créer un nouvel événement.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -429,7 +431,7 @@ Créer un nouvel événement.
 
 Récupérer la liste des événements.
 
-**Authentification requise**: ⚠️ Optionnelle (pour voir les événements privés)
+**Authentification requise**: Optionnelle (pour voir les événements privés)
 
 **Paramètres de requête**:
 
@@ -471,7 +473,7 @@ Récupérer la liste des événements.
 
 Récupérer les détails d'un événement.
 
-**Authentification requise**: ⚠️ Optionnelle (requise pour les événements privés)
+**Authentification requise**: Optionnelle (requise pour les événements privés)
 
 **Réponse (200)**:
 ```json
@@ -505,7 +507,7 @@ Récupérer les détails d'un événement.
 
 Mettre à jour un événement.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les organisateurs peuvent modifier
 
 **Corps de la requête**:
@@ -537,7 +539,7 @@ Mettre à jour un événement.
 
 Supprimer un événement.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les organisateurs peuvent supprimer
 
 **Réponse (200)**:
@@ -555,7 +557,7 @@ Supprimer un événement.
 
 Rejoindre un événement en tant que participant.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -572,7 +574,7 @@ Rejoindre un événement en tant que participant.
 
 Quitter un événement.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -591,7 +593,7 @@ Quitter un événement.
 
 Créer un nouveau groupe.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -639,7 +641,7 @@ Créer un nouveau groupe.
 
 Récupérer la liste des groupes.
 
-**Authentification requise**: ⚠️ Optionnelle
+**Authentification requise**: Optionnelle
 
 **Paramètres**: `page`, `per_page`
 
@@ -674,7 +676,7 @@ Récupérer la liste des groupes.
 
 Récupérer les détails d'un groupe.
 
-**Authentification requise**: ⚠️ Optionnelle (requise pour groupes privés/secrets)
+**Authentification requise**: Optionnelle (requise pour groupes privés/secrets)
 
 **Réponse (200)**:
 ```json
@@ -704,7 +706,7 @@ Récupérer les détails d'un groupe.
 
 Mettre à jour un groupe.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les administrateurs peuvent modifier
 
 **Corps de la requête**:
@@ -736,7 +738,7 @@ Mettre à jour un groupe.
 
 Rejoindre un groupe.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Note**: Impossible de rejoindre un groupe secret sans invitation
 
 **Réponse (200)**:
@@ -754,7 +756,7 @@ Rejoindre un groupe.
 
 Quitter un groupe.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -773,7 +775,7 @@ Quitter un groupe.
 
 Récupérer les messages d'un événement.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les participants peuvent voir
 
 **Réponse (200)**:
@@ -802,7 +804,7 @@ Récupérer les messages d'un événement.
 
 Poster un message dans un événement.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les participants peuvent poster
 
 **Corps de la requête**:
@@ -843,7 +845,7 @@ Pour répondre à un message, spécifier `parent_message_id`:
 
 Récupérer les messages d'un groupe.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les membres peuvent voir
 
 ---
@@ -852,7 +854,7 @@ Récupérer les messages d'un groupe.
 
 Poster un message dans un groupe.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les membres peuvent poster (si autorisé)
 
 ---
@@ -863,7 +865,7 @@ Poster un message dans un groupe.
 
 Créer un album photo.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les participants de l'événement
 
 **Corps de la requête**:
@@ -897,7 +899,7 @@ Créer un album photo.
 
 Récupérer les albums d'un événement.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -922,7 +924,7 @@ Récupérer les albums d'un événement.
 
 Ajouter une photo à un album.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -957,7 +959,7 @@ Ajouter une photo à un album.
 
 Récupérer les photos d'un album.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -984,12 +986,12 @@ Récupérer les photos d'un album.
 
 Commenter une photo.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
 {
-  "content": "Super photo ! 😄"
+  "content": "Super photo !"
 }
 ```
 
@@ -1002,7 +1004,7 @@ Commenter une photo.
     "_id": "507f1f77bcf86cd799439042",
     "author_id": "507f1f77bcf86cd799439013",
     "author_name": "Jane Smith",
-    "content": "Super photo ! 😄",
+    "content": "Super photo !",
     "created_at": "2026-02-01T11:00:00Z"
   }
 }
@@ -1016,7 +1018,7 @@ Commenter une photo.
 
 Créer un sondage.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les organisateurs
 
 **Corps de la requête**:
@@ -1061,7 +1063,7 @@ Créer un sondage.
 
 Récupérer les sondages d'un événement.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 ---
 
@@ -1069,7 +1071,7 @@ Récupérer les sondages d'un événement.
 
 Répondre à un sondage.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -1101,7 +1103,7 @@ Répondre à un sondage.
 
 Obtenir les résultats d'un sondage.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Réponse (200)**:
 ```json
@@ -1134,7 +1136,7 @@ Obtenir les résultats d'un sondage.
 
 Créer un type de billet.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seuls les organisateurs
 
 **Corps de la requête**:
@@ -1171,7 +1173,7 @@ Créer un type de billet.
 
 Récupérer les types de billets d'un événement.
 
-**Authentification requise**: ⚠️ Optionnelle
+**Authentification requise**: Optionnelle
 
 ---
 
@@ -1179,7 +1181,7 @@ Récupérer les types de billets d'un événement.
 
 Acheter un billet.
 
-**Authentification requise**: ❌ Non (route publique)
+**Authentification requise**: Non (route publique)
 
 **Corps de la requête**:
 ```json
@@ -1220,7 +1222,7 @@ Acheter un billet.
 
 Récupérer les billets vendus (organisateurs uniquement).
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Organisateurs uniquement
 
 **Réponse (200)**:
@@ -1244,7 +1246,7 @@ Récupérer les billets vendus (organisateurs uniquement).
 
 Ajouter un item à la shopping list.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -1284,7 +1286,7 @@ Ajouter un item à la shopping list.
 
 Récupérer la shopping list d'un événement.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 ---
 
@@ -1292,7 +1294,7 @@ Récupérer la shopping list d'un événement.
 
 Mettre à jour un item.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seul le créateur peut modifier
 
 **Corps de la requête**:
@@ -1309,7 +1311,7 @@ Mettre à jour un item.
 
 Supprimer un item.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seul le créateur peut supprimer
 
 ---
@@ -1320,7 +1322,7 @@ Supprimer un item.
 
 Créer une offre de covoiturage.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -1364,7 +1366,7 @@ Exemple: trajet de 2h30 + 30min d'écart = trajet max de 3h.
 
 Récupérer les offres de covoiturage.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 ---
 
@@ -1372,7 +1374,7 @@ Récupérer les offres de covoiturage.
 
 Réserver une place.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 **Corps de la requête**:
 ```json
@@ -1401,7 +1403,7 @@ Réserver une place.
 
 Annuler sa réservation.
 
-**Authentification requise**: ✅ Oui
+**Authentification requise**: Oui
 
 ---
 
@@ -1409,7 +1411,7 @@ Annuler sa réservation.
 
 Mettre à jour une offre.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seul le conducteur peut modifier
 
 ---
@@ -1418,7 +1420,7 @@ Mettre à jour une offre.
 
 Supprimer une offre.
 
-**Authentification requise**: ✅ Oui  
+**Authentification requise**: Oui  
 **Restriction**: Seul le conducteur peut supprimer (pas de passagers)
 
 ---
@@ -1538,48 +1540,48 @@ curl -X POST http://localhost:5000/api/discussions/event/$EVENT_ID/messages \
 
 ### 1. Sécurité
 
-- ✅ **Toujours utiliser HTTPS en production**
-- ✅ **Ne jamais partager votre token JWT**
-- ✅ **Renouveler les tokens régulièrement**
-- ✅ **Valider les données côté client avant envoi**
+-  **Toujours utiliser HTTPS en production**
+-  **Ne jamais partager votre token JWT**
+-  **Renouveler les tokens régulièrement**
+-  **Valider les données côté client avant envoi**
 
 ### 2. Performance
 
-- ✅ **Utiliser la pagination** pour les listes volumineuses
-- ✅ **Mettre en cache les données statiques**
-- ✅ **Limiter le nombre de requêtes simultanées**
+-  **Utiliser la pagination** pour les listes volumineuses
+-  **Mettre en cache les données statiques**
+-  **Limiter le nombre de requêtes simultanées**
 
 ### 3. Gestion des erreurs
 
-- ✅ **Toujours vérifier le code de statut HTTP**
-- ✅ **Lire le message d'erreur pour le debugging**
-- ✅ **Implémenter un système de retry pour les erreurs 500**
+-  **Toujours vérifier le code de statut HTTP**
+-  **Lire le message d'erreur pour le debugging**
+-  **Implémenter un système de retry pour les erreurs 500**
 
 ### 4. Format des dates
 
-- ✅ **Utiliser le format ISO 8601** : `2026-04-15T19:00:00Z`
-- ✅ **Toutes les dates sont en UTC**
-- ✅ **Convertir en heure locale côté client**
+-  **Utiliser le format ISO 8601** : `2026-04-15T19:00:00Z`
+-  **Toutes les dates sont en UTC**
+-  **Convertir en heure locale côté client**
 
 ### 5. Validation
 
-- ✅ **Respecter les longueurs maximales des champs**
-- ✅ **Valider les formats d'email**
-- ✅ **Vérifier les dates (end_date > start_date)**
+-  **Respecter les longueurs maximales des champs**
+-  **Valider les formats d'email**
+-  **Vérifier les dates (end_date > start_date)**
 
 ---
 
 ## Contact et Support
 
-- **Email**: salma@example.com
-- **GitHub**: https://github.com/votre-repo
+- **Email**: dissisalma@gmail.com
+- **GitHub**:  https://github.com/SalmaDev-alt/my-social-networks-api
 - **Documentation**: http://localhost:5000
 
 ---
 
 **Version**: 1.0.0  
 **Dernière mise à jour**: Février 2026  
-**Auteur**: Salma
+**Auteur**: Salma DISSI
 
 ---
 
